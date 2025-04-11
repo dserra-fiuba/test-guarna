@@ -3,6 +3,10 @@ def es_par(num):
 
 def main():
     numero = int(input("Ingrese numero positivo para conocer su paridad: "))
+    while(numero<0):
+        print("Numero Invalido.")
+        numero = int(input("Ingrese numero positivo para conocer su paridad: "))
+    
     if (es_par(numero)):
         print("El numero es par")
     else:
